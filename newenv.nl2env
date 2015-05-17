@@ -42,9 +42,7 @@
         <plantmask>intern:data/textures/fx/black.png</plantmask>
       </layer>
     </background>
-    <object azimuth="0" distance="1086.12" height="0" roty="0" autoheight="true">intern:data/objects/grass/Grass.nl2sco</object>
-    <object azimuth="0" distance="1086.12" height="0" roty="0" autoheight="true">intern:data/objects/trees/Date Palm Large.nl2sco</object>
-    <bgplant intensity="0.802469">intern:data/objects/background/Cedar Tree.nl2bgp</bgplant>
+    <bgplant intensity="0.102469">intern:data/objects/background/Cedar Tree.nl2bgp</bgplant>
     <bgplant intensity="0.271605">intern:data/objects/background/Maple Tree.nl2bgp</bgplant>
     <bgplant intensity="0.148148">intern:data/objects/background/Pine Tree.nl2bgp</bgplant>
     <scriptfile>intern:data/scripts/Ambient Sounds.nl2script</scriptfile>
