@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+  <environment>
+    <description>Default environment with dynamic skybox and dynamic clouds</description>
+    <preview>base:data/environments/default/preview.jpg</preview>
+    <dynamicsky upperhalf="true">
+      <location latitude="51.48" longitude="0"/>
+      <date month="7" day="30"/>
+      <time hours="10" minutes="0"/>
+    </dynamicsky>
+    <sun render="true">
+      <position azimuth="290" elevation="25"/>
+      <diffusecolor r="1" g="1" b="1" a="1"/>
+      <ambientcolor r="0.4" g="0.4" b="0.4" a="1"/>
+      <specularcolor r="1" g="1" b="1" a="1"/>
+    </sun>
+    <moon render="true" state="0.2" intensity="1" rotation="0">
+      <position azimuth="290" elevation="25"/>
+    </moon>
+    <weather>
+      <wind azimuth="135" speed="4"/>
+      <sky overcast="0"/>
+      <fog density="0.00013"/>
+      <fogcolor r="1" g="1" b="1" a="1"/>
+      <dynamicclouds coverage="0.6"/>
+    </weather>
+    <clouds>
+      <layer1 scale="0.4" scroll="0.0008">intern:data/textures/clouds/clouds1.png</layer1>
+      <layer2 scale="0.5" scroll="0.001">intern:data/textures/clouds/clouds2.png</layer2>
+    </clouds>
+    <background minheight="1" maxheight="1100" perlinsize="7000" perlinpersistence="0.5" perlinoffsetx="0" perlinoffsetz="0" innerfadeslope="1.2" outerfadeslope="0">
+      <layer coverage="1" minheight="0" maxheight="400" minslope="0" maxslope="90" noise="0.1" noisedetail="1">
+        <texture repeats="8">intern:data/textures/background/nearground.jpg</texture>
+        <plantmask>intern:data/textures/background/nearground treemask.png</plantmask>
+      </layer>
+      <layer coverage="1" minheight="350" maxheight="950" minslope="0" maxslope="90" noise="0.1" noisedetail="1">
+        <texture repeats="8">intern:data/textures/background/farground.jpg</texture>
+        <plantmask>intern:data/textures/background/farground treemask.png</plantmask>
+      </layer>
+      <layer coverage="1" minheight="900" maxheight="4500" minslope="0" maxslope="90" noise="0.1" noisedetail="1">
+        <texture repeats="12">intern:data/textures/background/snowrock.jpg</texture>
+        <plantmask>intern:data/textures/fx/black.png</plantmask>
+      </layer>
+    </background>
+    <object azimuth="0" distance="1086.12" height="0" roty="0" autoheight="true">intern:data/objects/grass/Grass.nl2sco</object>
+    <object azimuth="0" distance="1086.12" height="0" roty="0" autoheight="true">intern:data/objects/trees/Date Palm Large.nl2sco</object>
+    <bgplant intensity="0.802469">intern:data/objects/background/Cedar Tree.nl2bgp</bgplant>
+    <bgplant intensity="0.271605">intern:data/objects/background/Maple Tree.nl2bgp</bgplant>
+    <bgplant intensity="0.148148">intern:data/objects/background/Pine Tree.nl2bgp</bgplant>
+    <scriptfile>intern:data/scripts/Ambient Sounds.nl2script</scriptfile>
+  </environment>
+</root>
